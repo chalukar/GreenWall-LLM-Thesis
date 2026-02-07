@@ -2,7 +2,7 @@
 
 A voice-interactive Vertical Living Green Wall system powered by AI that enables natural conversations between plants and humans. This project combines IoT sensors, speech recognition, and Large Language Models to create an intelligent plant monitoring and interaction system.
 
-## 🌿 Project Overview
+##  Project Overview
 
 This thesis project demonstrates an innovative approach to human-plant interaction by giving a vertical green wall the ability to:
 - **Communicate** its water needs through voice
@@ -14,7 +14,7 @@ The system consists of two main components that work together over a network con
 - **Raspberry Pi Client** (`pi_greenwall_client.py`) - Handles sensors, audio I/O, and user interaction
 - **Brain Server** (`brain_server.py`) - Processes speech, runs AI conversations, and manages logic
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────┐
@@ -40,7 +40,7 @@ The system consists of two main components that work together over a network con
 └─────────────────────────────────────┘
 ```
 
-## ✨ Features
+##  Features
 
 ### Core Functionality
 - **Motion-Triggered Interaction**: Detects hand waves via PIR sensor to initiate conversations
@@ -56,7 +56,7 @@ The system consists of two main components that work together over a network con
 - Real-time sensor data integration during conversations
 - Text cleaning for natural-sounding speech synthesis
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
 ### Raspberry Pi Client
 - Raspberry Pi (3/4/Zero 2W recommended)
@@ -94,7 +94,7 @@ pip install ollama
 ollama pull gemma2:2b
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Client Configuration
 Edit `pi_greenwall_client.py`:
@@ -120,7 +120,7 @@ arecord -l                 # List recording devices
 aplay -l                   # List playback devices
 ```
 
-## 🚀 Running the System
+##  Running the System
 
 ### 1. Start the Brain Server (PC/Laptop)
 ```bash
@@ -139,7 +139,7 @@ python pi_greenwall_client.py
 4. **Conversation**: Speak naturally after hearing the response tone
 5. **Exit**: Say "bye", "stop", or "exit" to end the session
 
-## 🔄 Communication Protocol
+##  Communication Protocol
 
 The system uses a custom packet-based protocol:
 
@@ -165,7 +165,7 @@ The system uses a custom packet-based protocol:
 }
 ```
 
-## 🧪 Testing Components
+##  Testing Components
 
 The repository includes test utilities:
 
@@ -173,7 +173,7 @@ The repository includes test utilities:
 - `test_pir.py` - Test PIR motion sensor
 - `check_Sensor.py` - Arduino sensor diagnostics
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 GreenWall_LLM/
@@ -189,7 +189,7 @@ GreenWall_LLM/
 └── backup/                    # Backup files
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Connection Issues
 - Ensure both devices are on the same network
@@ -211,7 +211,7 @@ GreenWall_LLM/
 - Verify model is available: `ollama list`
 - Pull model if needed: `ollama pull gemma2:2b`
 
-## 🎓 Thesis Context
+##  Thesis Context
 
 This project is part of a thesis exploring human-computer interaction in the context of smart agriculture and IoT. The goal is to investigate how conversational AI can enhance plant care and user engagement with urban greenery systems.
 
@@ -220,7 +220,7 @@ This project is part of a thesis exploring human-computer interaction in the con
 - How do users respond to plants that "communicate" their needs?
 - What is the effectiveness of LLMs in creating natural plant personas?
 
-## 🔐 Security Notes
+##  Security Notes
 
 - The current implementation uses unencrypted sockets for local network communication
 - For production deployments, consider adding:
@@ -228,22 +228,22 @@ This project is part of a thesis exploring human-computer interaction in the con
   - Authentication for server connections
   - Environment variables for sensitive configuration
 
-## 📝 License
+##  License
 
 This project is part of academic research at Stockholm University.
 
-## 👤 Author
+##  Author
 
 Chaluka - Stockholm University, Spring 2025 Thesis Project
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Ollama** - For providing local LLM capabilities
 - **Google Text-to-Speech (gTTS)** - For speech synthesis
 - **SpeechRecognition** - For audio transcription
 - Stockholm University - For academic support
 
-## 📚 Future Improvements
+##  Future Improvements
 
 - [ ] Implement voice activity detection to replace manual ENTER key
 - [ ] Add support for multiple plant sensors
@@ -255,4 +255,4 @@ Chaluka - Stockholm University, Spring 2025 Thesis Project
 
 ---
 
-**For questions or collaboration, please open an issue on GitHub.**
+
