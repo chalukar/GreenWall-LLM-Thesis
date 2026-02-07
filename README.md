@@ -17,6 +17,8 @@ The system consists of two main components that work together over a network con
 ##  System Architecture
 
 ```
+![Final Prototype system Architecture](https://github.com/user-attachments/assets/92c93992-9701-4bb5-a06d-1f9e2aa650aa)
+
 ┌─────────────────────────────────────┐
 │      Raspberry Pi Client            │
 │  ┌────────────────────────────┐     │
@@ -70,7 +72,7 @@ The system consists of two main components that work together over a network con
 - PC/Laptop with Python 3.x
 - Network connectivity to Raspberry Pi
 
-## 📦 Software Dependencies
+##  Software Dependencies
 
 ### Raspberry Pi Client (`pi_greenwall_client.py`)
 ```bash
@@ -99,7 +101,7 @@ ollama pull gemma2:2b
 ### Client Configuration
 Edit `pi_greenwall_client.py`:
 ```python
-SERVER_IP = '192.168.137.1'  # IP address of Brain Server
+SERVER_IP = '0.0.0.0'  # IP address of Brain Server
 PORT = 5000                   # Must match server port
 SERIAL_PORT = '/dev/ttyACM1'  # Arduino serial port
 BAUD_RATE = 9600
